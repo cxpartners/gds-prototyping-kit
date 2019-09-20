@@ -1,0 +1,81 @@
+{
+  "name": "gds-prototyping-kit",
+  "version": "1.0.0",
+  "description": "node express react prototyping kit using GDS components",
+  "main": "index.jsx",
+  "nodemonConfig": {
+    "watch": [
+      "server"
+    ]
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.prod.js",
+    "dev-server-hot": "webpack-dev-server --hot --config webpack.config.dev.js",
+    "serve": "nodemon ./app/server/index.js localhost 5000",
+    "start": "concurrently --kill-others \"npm run serve\" \"npm run dev-server-hot\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "gds-prototyping-kit"
+  },
+  "keywords": [
+    "gds",
+    "node",
+    "react",
+    "express",
+    "sass"
+  ],
+  "author": "dave martin",
+  "license": "ISC",
+  "dependencies": {
+    "@hot-loader/react-dom": "^16.9.0",
+    "classnames": "^2.2.6",
+    "core-js": "^2.6.9",
+    "express": "^4.17.1",
+    "govuk-frontend": "^3.1.0",
+    "history": "^4.10.1",
+    "promise-polyfill": "8.1.3",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-hot-loader": "^4.12.12",
+    "react-redux": "^7.1.1",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1",
+    "react-router-prop-types": "^1.0.4",
+    "redux": "^4.0.4",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "concurrently": "^4.1.2",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.3.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-loader": "^3.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^2.0.1",
+    "html-webpack-deploy-plugin": "^2.0.6",
+    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-tags-plugin": "^2.0.15",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.2",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0",
+    "webpack-merge": "^4.2.2",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
