@@ -81,7 +81,7 @@ module.exports = {
       chunksSortMode: 'none',
     }),
     new HtmlWebpackDeployPlugin({
-      assetsPath: '/assets/js',
+      assetsPath: './assets/js',
       append: false,
       usePackagesPath: false,
       packages: {
