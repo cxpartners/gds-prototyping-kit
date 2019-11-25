@@ -2,9 +2,11 @@ version: '3'
 services:
   web:
     build: .
-    command: npm run start
-    image: 'sepa-prototype:latest'
-    env_file:
-      - .env
+    image: 'gds-prototyping-kit:latest'
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
     ports:
       - 3000:3000
+    environment:
+      - NODE_ENV=development
