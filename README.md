@@ -46,7 +46,7 @@ To find out more, read the [VS Code Docs](https://code.visualstudio.com/docs/edi
 #### Add a page to the router:
 * the router is located in app/App.jsx
 
-To find out more, read the [React Router docs]](https://reacttraining.com/react-router/web/guides/quick-start) 
+To find out more, read the [React Router docs](https://reacttraining.com/react-router/web/guides/quick-start) 
 
 ### Creating and modifying components
 
@@ -114,7 +114,7 @@ The GDS community operates with these principles:
 2. Contribute back and help others
 3. Prioritise openness and honesty
 
-To find out more, read the [Design System 'Community' page](https://design-system.service.gov.uk/community/)
+To find out more, read the [Gov.uk Design System 'Community' page](https://design-system.service.gov.uk/community/)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
