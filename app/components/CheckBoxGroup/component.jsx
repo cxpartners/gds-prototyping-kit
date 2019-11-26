@@ -1,19 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const TabList = (props) => {
+const CheckBoxGroup = (props) => {
   const { children } = props;
 
   return (
-    <ul className="govuk-tabs__list">
+    <div className="govuk-checkboxes">
       {children}
-    </ul>
+    </div>
   );
 };
 
-export default TabList;
+export default CheckBoxGroup;
 
-TabList.propTypes = {
+CheckBoxGroup.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,

@@ -10,10 +10,8 @@
   },
   "scripts": {
     "build": "webpack --config webpack.config.prod.js",
-    "dev-server-hot": "webpack-dev-server --hot --config webpack.config.dev.js",
-    "serve": "nodemon ./app/server/index.js localhost 5000",
-    "start": "concurrently --kill-others \"npm run serve\" \"npm run dev-server-hot\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --hot --config webpack.config.dev.js",
+    "test": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -34,6 +32,7 @@
     "classnames": "^2.2.6",
     "core-js": "^2.6.9",
     "express": "^4.17.1",
+    "file-loader": "^5.0.2",
     "govuk-frontend": "^3.1.0",
     "history": "^4.10.1",
     "promise-polyfill": "8.1.3",

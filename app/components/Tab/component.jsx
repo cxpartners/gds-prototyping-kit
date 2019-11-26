@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import { Link } from 'react-router-dom';
 
 const Tab = (props) => {
   const {
@@ -15,9 +16,9 @@ const Tab = (props) => {
 
   return (
     <li className={tabClassNames}>
-      <a className="govuk-tabs__tab" href={`#${href}`}>
+      <Link className="govuk-tabs__tab" to={href}>
         {title}
-      </a>
+      </Link>
     </li>
   );
 };

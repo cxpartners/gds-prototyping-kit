@@ -6,6 +6,7 @@ const FieldSet = (props) => {
   const {
     children,
     legend,
+    inPage,
     hint,
     errorMessage,
     error,
@@ -15,13 +16,21 @@ const FieldSet = (props) => {
     'govuk-visually-hidden': error,
   });
 
-  const isLegend = legend ? (
-    <legend className="govuk-fieldset__legend govuk-fieldset__legend--xl">
-      <h1 className="govuk-fieldset__heading">
-        {legend}
-      </h1>
-    </legend>
-  ) : '';
+  let isLegend = '';
+
+  if (legend) {
+    if (inPage) {
+      isLegend = <legend className="govuk-fieldset__legend govuk-!-font-weight-bold govuk-!-font-size-24">{legend}</legend>;
+    } else {
+      isLegend = (
+        <legend className="govuk-fieldset__legend govuk-fieldset__legend--xl">
+          <h1 className="govuk-fieldset__heading">
+            {legend}
+          </h1>
+        </legend>
+      );
+    }
+  }
 
   const isHint = hint ? (
     <span id="hint" className="govuk-hint">
@@ -50,14 +59,21 @@ const FieldSet = (props) => {
 export default FieldSet;
 
 FieldSet.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
   legend: PropTypes.string,
   hint: PropTypes.string,
-  errorMessage: PropTypes.string.isRequired,
-  error: PropTypes.bool.isRequired,
+  errorMessage: PropTypes.string,
+  error: PropTypes.bool,
+  inPage: PropTypes.bool,
 };
 
 FieldSet.defaultProps = {
   legend: null,
   hint: null,
+  inPage: false,
+  errorMessage: '',
+  error: false,
 };

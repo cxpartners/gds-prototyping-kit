@@ -5,14 +5,14 @@ import FieldSet from '../FieldSet/component';
 import FormGroup from '../FormGroup/component';
 
 const DateInput = (props) => {
-  const { legend, hint } = props;
+  const { legend, hint, error } = props;
 
   return (
-    <FormGroup>
+    <FormGroup error={error}>
       <FieldSet legend={legend} hint={hint}>
         <div className="govuk-date-input" id="expiry">
           <div className="govuk-date-input__item">
-            <FormGroup>
+            <FormGroup error={error}>
               <label className="govuk-label govuk-date-input__label" htmlFor="expiry-day">
                 Day
               </label>
@@ -20,7 +20,7 @@ const DateInput = (props) => {
             </FormGroup>
           </div>
           <div className="govuk-date-input__item">
-            <FormGroup>
+            <FormGroup error={error}>
               <label className="govuk-label govuk-date-input__label" htmlFor="expiry-month">
                 Month
               </label>
@@ -28,7 +28,7 @@ const DateInput = (props) => {
             </FormGroup>
           </div>
           <div className="govuk-date-input__item">
-            <FormGroup>
+            <FormGroup error={error}>
               <label className="govuk-label govuk-date-input__label" htmlFor="expiry-year">
                 Year
               </label>
@@ -46,9 +46,11 @@ export default DateInput;
 DateInput.propTypes = {
   legend: PropTypes.string,
   hint: PropTypes.string,
+  error: PropTypes.bool,
 };
 
 DateInput.defaultProps = {
   legend: false,
   hint: false,
+  error: false,
 };

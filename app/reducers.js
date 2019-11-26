@@ -1,14 +1,18 @@
-export const TOGGLE_REDIRECT_YOUR_NAME = 'TOGGLE_REDIRECT_YOUR_NAME';
-export const UPDATE_YOUR_NAME = 'UPDATE_YOUR_NAME';
-export const TOGGLE_YOUR_NAME_ERROR = 'TOGGLE_YOUR_NAME_ERROR';
-export const TOGGLE_REDIRECT_RADIO = 'TOGGLE_REDIRECT_RADIO';
-export const UPDATE_RADIO = 'UPDATE_RADIO';
+export const TOGGLE_ACCORDION = 'TOGGLE_ACCORDION';
+export const TOGGLE_CHECKBOX = 'TOGGLE_CHECKBOX';
 export const TOGGLE_RADIO_ERROR = 'TOGGLE_RADIO_ERROR';
+export const TOGGLE_REDIRECT_RADIO = 'TOGGLE_REDIRECT_RADIO';
+export const TOGGLE_REDIRECT_YOUR_NAME = 'TOGGLE_REDIRECT_YOUR_NAME';
+export const TOGGLE_YOUR_NAME_ERROR = 'TOGGLE_YOUR_NAME_ERROR';
+export const UPDATE_RADIO = 'UPDATE_RADIO';
+export const UPDATE_YOUR_NAME = 'UPDATE_YOUR_NAME';
 
 const initialState = {
   radioValue: '',
   radioError: false,
   radioRedirect: false,
+  showAccordion: false,
+  checkboxChecked: false,
   yourNameValue: '',
   yourNameError: false,
   yourNameRedirect: false,
@@ -20,6 +24,16 @@ export default (state = initialState, action) => {
       return {
         ...state,
         yourNameValue: action.payload,
+      };
+    case TOGGLE_ACCORDION:
+      return {
+        ...state,
+        showAccordion: !state.showAccordion,
+      };
+    case TOGGLE_CHECKBOX:
+      return {
+        ...state,
+        checkboxChecked: !state.checkboxChecked,
       };
     case TOGGLE_YOUR_NAME_ERROR:
       return {
@@ -41,8 +55,17 @@ export default (state = initialState, action) => {
   }
 };
 
-export const updateYourName = () => (dispatch) => {
-  dispatch({ type: UPDATE_YOUR_NAME });
+
+export const toggleAccordion = () => (dispatch) => {
+  dispatch({ type: TOGGLE_ACCORDION });
+};
+
+export const toggleCheckbox = () => (dispatch) => {
+  dispatch({ type: TOGGLE_CHECKBOX });
+};
+
+export const toggleRadioError = () => (dispatch) => {
+  dispatch({ type: TOGGLE_RADIO_ERROR });
 };
 
 export const toggleYourNameError = () => (dispatch) => {
@@ -53,6 +76,6 @@ export const updateRadio = () => (dispatch) => {
   dispatch({ type: UPDATE_RADIO });
 };
 
-export const toggleRadioError = () => (dispatch) => {
-  dispatch({ type: TOGGLE_RADIO_ERROR });
+export const updateYourName = () => (dispatch) => {
+  dispatch({ type: UPDATE_YOUR_NAME });
 };
