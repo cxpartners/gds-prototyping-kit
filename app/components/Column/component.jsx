@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Column = (props) => {
   const { children, columnWidth } = props;
-  const columnClass = `govuk-grid-column-${columnWidth}`;
+  const columnClass = columnWidth ? `govuk-grid-column-${columnWidth}` : 'govuk-grid-column-full';
 
   return (
     <div className={columnClass}>
@@ -15,6 +15,13 @@ const Column = (props) => {
 export default Column;
 
 Column.propTypes = {
-  children: PropTypes.node.isRequired,
-  columnWidth: PropTypes.oneOf(['full', 'one-half', 'one-third', 'two-thirds', 'one-quarter']).isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
+  columnWidth: PropTypes.oneOf(['full', 'one-half', 'one-third', 'two-thirds', 'one-quarter']),
+};
+
+Column.defaultProps = {
+  columnWidth: 'full',
 };

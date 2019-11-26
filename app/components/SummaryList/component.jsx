@@ -14,7 +14,10 @@ const SummaryList = (props) => {
 export default SummaryList;
 
 SummaryList.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
   modifier: PropTypes.string,
 };
 

@@ -1,19 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const TabList = (props) => {
+const Accordion = (props) => {
   const { children } = props;
 
   return (
-    <ul className="govuk-tabs__list">
+    <div className="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
       {children}
-    </ul>
+    </div>
   );
 };
 
-export default TabList;
+export default Accordion;
 
-TabList.propTypes = {
+Accordion.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,

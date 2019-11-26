@@ -20,6 +20,9 @@ const FormGroup = (props) => {
 export default FormGroup;
 
 FormGroup.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
   error: PropTypes.bool.isRequired,
 };

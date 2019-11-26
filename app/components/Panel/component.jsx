@@ -19,6 +19,10 @@ const Panel = (props) => {
 export default Panel;
 
 Panel.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.string, PropTypes.array]).isRequired,
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   title: PropTypes.string.isRequired,
+};
+
+Panel.defaultProps = {
+  children: '',
 };

@@ -1,4 +1,5 @@
 $govuk-assets-path: '/assets';
 
 @import "../../node_modules/govuk-frontend/govuk/all";
-@import "../components/PhaseBanner/style.scss";
+@import "../components/FakePage/style.scss";
+@import "../components/Footer/style.scss";

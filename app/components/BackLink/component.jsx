@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link as RouterLink } from 'react-router-dom';
 
 const BackLink = (props) => {
   const { href } = props;
 
   return (
-    <a className="govuk-back-link" to={href}>Back</a>
+    <RouterLink className="govuk-back-link" to={href}>Back</RouterLink>
   );
 };
 

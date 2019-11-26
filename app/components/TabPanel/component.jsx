@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const TabPanel = (props) => {
-  const { children, id, title } = props;
+  const { children, title } = props;
 
   return (
-    <section className="govuk-tabs__panel" id={id}>
+    <section className="govuk-tabs__panel">
       <h2 className="govuk-heading-l">{title}</h2>
       {children}
     </section>
@@ -15,7 +15,9 @@ const TabPanel = (props) => {
 export default TabPanel;
 
 TabPanel.propTypes = {
-  children: PropTypes.node.isRequired,
-  id: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
   title: PropTypes.string.isRequired,
 };

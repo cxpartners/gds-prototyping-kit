@@ -17,6 +17,7 @@ For **Alpha**  projects
 ## Usage
 `npm run dev` to run development server
 `npm run build` to build for production
+`npm run test` to run eslint
 
 ## Updating the kit
 
@@ -25,35 +26,37 @@ Currently asset files are manually copied over to the assets folder from `node_m
 Idea for development: write build script (or npm script) to automate.
 
 ## Component list:
-Idea for development: write README for each component.
+Idea for development: write README for each component (and link here) or Storybook?
 
-- [ ] *Accordion - experimental feature*
+- [x] Accordion - *needs expansion*
 - [x] Back link
 - [x] Breadcrumbs
 - [x] Button
-- [ ] *Character count - last resort*
-- [ ] Checkboxes
+- [ ] Character count - *to do*
+- [x] Checkboxes
 - [x] Date input
 - [x] Details
 - [ ] Error message
 - [ ] Error summary
 - [x] Fieldset
-- [ ] File upload
+- [x] File upload - *needs expansion*
 - [x] Footer
 - [x] Header
 - [x] Inset text
 - [x] Panel
 - [x] Phase banner
 - [x] Radios
-- [ ] *Select - last resort*
+- [ ] Select - *to do*
 - [x] Skip link
 - [x] Summary list
-- [ ] Table
+- [ ] Table - *to do*
 - [x] Tabs
-- [ ] Tag
+- [x] Tag
 - [x] Text input
 - [x] Textarea
 - [x] Warning text
+
+- FakePage
 
 ## HTML Template
 

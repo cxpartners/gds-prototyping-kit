@@ -22,7 +22,7 @@ const Textarea = (props) => {
     </span>
   ) : '';
 
-  let textareaInputClassNames = 'govuk-input ';
+  let textareaInputClassNames = 'govuk-textarea ';
 
   switch (inputWidth) {
     case '2':

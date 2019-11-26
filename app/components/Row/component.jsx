@@ -14,5 +14,8 @@ const Row = (props) => {
 export default Row;
 
 Row.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
 };

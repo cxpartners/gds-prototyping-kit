@@ -4,90 +4,50 @@ import PropTypes from 'prop-types';
 const Heading = (props) => {
   const { caption, children, level } = props;
 
+  let captionClassName;
+  let headingClassName;
+  let headingTag;
+
   switch (level) {
     case 'h1':
-      return (
-        caption
-          ? (
-            <>
-              <span className="govuk-caption-xl">{caption}</span>
-              <h1 className="govuk-heading-xl">
-                {children}
-              </h1>
-            </>
-          )
-          : (
-            <h1 className="govuk-heading-xl">
-              {children}
-            </h1>
-          )
-      );
+      captionClassName = 'govuk-caption-xl';
+      headingClassName = 'govuk-heading-xl';
+      headingTag = <h1 className={headingClassName}>{children}</h1>;
+      break;
     case 'h2':
-      return (
-        caption
-          ? (
-            <>
-              <span className="govuk-caption-l">{caption}</span>
-              <h2 className="govuk-heading-l">
-                {children}
-              </h2>
-            </>
-          )
-          : (
-            <h2 className="govuk-heading-l">
-              {children}
-            </h2>
-          )
-      );
+      captionClassName = 'govuk-caption-l';
+      headingClassName = 'govuk-heading-l';
+      headingTag = <h2 className={headingClassName}>{children}</h2>;
+      break;
     case 'h3':
-      return (
-        caption
-          ? (
-            <>
-              <span className="govuk-caption-m">{caption}</span>
-              <h3 className="govuk-heading-m">
-                {children}
-              </h3>
-            </>
-          )
-          : (
-            <h3 className="govuk-heading-m">
-              {children}
-            </h3>
-          )
-      );
+      captionClassName = 'govuk-caption-m';
+      headingClassName = 'govuk-heading-m';
+      headingTag = <h3 className={headingClassName}>{children}</h3>;
+      break;
     case 'h4':
-      return (
-        caption
-          ? (
-            <>
-              <span className="govuk-caption-s">{caption}</span>
-              <h4 className="govuk-heading-s">
-                {children}
-              </h4>
-            </>
-          )
-          : (
-            <h4 className="govuk-heading-s">
-              {children}
-            </h4>
-          )
-      );
-
+      captionClassName = 'govuk-caption-s';
+      headingClassName = 'govuk-heading-s';
+      headingTag = <h4 className={headingClassName}>{children}</h4>;
+      break;
     default:
-      return (
-        <h1 className="govuk-heading-xl">
-          {children}
-        </h1>
-      );
+      captionClassName = 'govuk-caption-xl';
+      headingClassName = 'govuk-heading-xl';
+      headingTag = <h1 className={headingClassName}>{children}</h1>;
   }
+
+  return (
+    <>
+      { caption ? <span className={captionClassName}>{caption}</span> : '' }
+      {headingTag}
+    </>
+  );
 };
 
 export default Heading;
 
 Heading.propTypes = {
   caption: PropTypes.string,
-  children: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.element, PropTypes.array]).isRequired,
   level: PropTypes.string.isRequired,
 };
 

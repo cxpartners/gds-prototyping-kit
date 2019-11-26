@@ -20,7 +20,10 @@ const List = (props) => {
 export default List;
 
 List.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
   ordered: PropTypes.bool,
 };
 

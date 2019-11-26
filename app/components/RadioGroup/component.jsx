@@ -19,7 +19,10 @@ const RadioGroup = (props) => {
 export default RadioGroup;
 
 RadioGroup.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
   inline: PropTypes.bool,
 };
 
