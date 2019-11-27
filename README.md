@@ -53,14 +53,14 @@ To find out more, read the [VS Code Docs](https://code.visualstudio.com/docs/edi
       <Switch>
         <Route exact path="/" component={ExampleIndexPage} />
         <Route path="/myNewPage" component={MyNewPage} />
-        </Switch>
+      </Switch>
     </Router>
   );
 
   export default hot(App);
 ```
 
-To find out more, read the [React Router docs](https://reacttraining.com/react-router/web/guides/quick-start) 
+To find out more, read the [React Router docs](https://reacttraining.com/react-router/web/guides/quick-start).
 
 ### Creating and modifying components
 
@@ -69,14 +69,14 @@ To find out more, read the [React Router docs](https://reacttraining.com/react-r
 * choose `Insert Snippet` in the Command Palette and choose `component`,
 * The snippet copies some JSX to the new file with placeholders - multiple cursors ready to accept mutliple inputs which you can tab between.
 * Type a name for your component, press the `tab` key, 
-* You can name the enclosing tag for your component, or leave blank to use the [React Fragments shorter syntax](https://reactjs.org/docs/fragments.html#short-syntax),
+* You can name the enclosing tag for your component, or leave blank to use the [React Fragments shorter syntax](https://reactjs.org/docs/fragments.html#short-syntax).
 
 #### Modify existing component styles
 * create a `.scss` in the component folder for files,
 * include this file in `styles/main.scss`.
 
 #### Using PropTypes
-* You can catch a lot of bugs with typechecking - to keep development agile, propType checking is done with the [prop-types library](https://reactjs.org/docs/typechecking-with-proptypes.html).
+* You can catch a lot of bugs with typechecking using the [prop-types library](https://reactjs.org/docs/typechecking-with-proptypes.html).
 
 ### Persisting data
 #### Creating a page with state management
