@@ -1,0 +1,124 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"component": {
+		"prefix": "component",
+		"body": [
+			"import React from 'react';",
+			"import PropTypes from 'prop-types';",
+			"",
+			"const $1 = (props) => {",
+			"  const { children } = props;",
+			"",
+			"  return (",
+			"    <$2>",
+			"      {children}",
+			"    </$2>",
+			"  );",
+			"};",
+			"",
+			"export default $1;",
+			"",
+			"$1.propTypes = {",
+			"  children: PropTypes.element.isRequired,",
+			"};",
+			""
+		],
+		"description": "component"
+	},
+	"page": {
+		"prefix": "page",
+		"body": [
+			"import React from 'react';",
+			"import Header from '../components/Header/component';",
+			"import Container from '../components/Container/component';",
+			"import PhaseBanner from '../components/PhaseBanner/component';",
+			"import Main from '../components/Main/component';",
+			"import Row from '../components/Row/component';",
+			"import Column from '../components/Column/component';",
+			"import Heading from '../components/Heading/component';",
+			"import Footer from '../components/Footer/component';",
+			"import BackLink from '../components/BackLink/component';",
+			"",
+			"const $1 = () => (",
+			"  <>",
+			"    <Header />",
+			"    <Container>",
+			"      <PhaseBanner />",
+			"      <BackLink href=\"$3\" />",
+			"      <Main>",
+			"        <Row>",
+			"          <Column columnWidth=\"full\">",
+			"            <Heading level=\"h1\">$2</Heading>",
+			"          </Column>",
+			"        </Row>",
+			"      </Main>",
+			"    </Container>",
+			"    <Footer />",
+			"  </>",
+			");",
+			"",
+			"export default $1;"
+		],
+		"description": "page"
+	},
+	"page with state": {
+		"prefix": "pageWithState",
+		"body": [
+			"import React from 'react';",
+			"import { useSelector, useDispatch } from 'react-redux';",
+			"import Header from '../components/Header/component';",
+			"import Container from '../components/Container/component';",
+			"import PhaseBanner from '../components/PhaseBanner/component';",
+			"import Main from '../components/Main/component';",
+			"import Row from '../components/Row/component';",
+			"import Column from '../components/Column/component';",
+			"import Heading from '../components/Heading/component';",
+			"import Footer from '../components/Footer/component';",
+			"import BackLink from '../components/BackLink/component';",
+			"import { $4 } from '../reducers';",
+			"",
+			"",
+			"const $1 = () => {",
+			"  const $5 = useSelector((state) => state.$5);",
+			"  const dispatch = useDispatch();",
+			"",
+			"  return (",
+			"    <>",
+			"      <Header />",
+			"      <Container>",
+			"        <PhaseBanner />",
+			"        <BackLink href=\"/$3\" />",
+			"        <Main>",
+			"          <Row>",
+			"            <Column columnWidth=\"two-thirds\">",
+			"              <Heading level=\"h1\">$2</Heading>",
+			"            </Column>",
+			"          </Row>",
+			"        </Main>",
+			"      </Container>",
+			"      <Footer />",
+			"    </>",
+			"  );",
+			"};",
+			"",
+			"export default $1;",
+			""
+		],
+		"description": ""
+	}
+}

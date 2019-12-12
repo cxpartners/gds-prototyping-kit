@@ -13,7 +13,7 @@ import Column from '../components/Column/component';
 import Container from '../components/Container/component';
 import DateInput from '../components/DateInput/component';
 import Details from '../components/Details/component';
-import FieldSet from '../components/FieldSet/component';
+import Fieldset from '../components/Fieldset/component';
 import Footer from '../components/Footer/component';
 import Header from '../components/Header/component';
 import Heading from '../components/Heading/component';
@@ -98,7 +98,7 @@ const Example = () => {
             <Column columnWidth="two-thirds">
               <Tabs title="Tab List">
                 <TabList>
-                  <Tab href="tab-1" title="cool tab" selected />
+                  <Tab href="tab-1" title="cool tab" isSelected />
                   <Tab href="tab-2" title="another cool tab" />
                 </TabList>
                 <TabPanel id="tab-1" title="Cool Tab">
@@ -124,7 +124,7 @@ const Example = () => {
               <BackLink href="/" />
               <Heading level="h2">Form fields</Heading>
               <form action="/form-handler" method="post" noValidate>
-                <DateInput legend="Some Date" hint="some hint" />
+                <DateInput legend="Some date" hint="some hint" />
                 <TextInput label="Text input" id="text-input" inputWidth="one-third" type="text" onChange={(e) => { e.preventDefault(); }} />
                 <Textarea label="Text area" hint="Text area hint" rows="5" inputWidth="one-third" id="example-text-area" />
               </form>
@@ -132,7 +132,7 @@ const Example = () => {
           </Row>
           <Row>
             <Column>
-              <FieldSet legend="FieldSet">
+              <Fieldset legend="Fieldset">
                 <CheckBoxGroup>
                   <CheckBox
                     checked={checkboxChecked}
@@ -140,7 +140,7 @@ const Example = () => {
                     value="checkbox"
                   />
                 </CheckBoxGroup>
-              </FieldSet>
+              </Fieldset>
             </Column>
           </Row>
           <Row>

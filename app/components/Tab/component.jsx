@@ -5,13 +5,14 @@ import { Link } from 'react-router-dom';
 
 const Tab = (props) => {
   const {
-    selected,
+    isSelected,
     href,
     title,
   } = props;
+
   const tabClassNames = classNames({
     'govuk-tabs__list-item': true,
-    'govuk-tabs__list-item--selected': selected,
+    'govuk-tabs__list-item--selected': isSelected,
   });
 
   return (
@@ -26,11 +27,11 @@ const Tab = (props) => {
 export default Tab;
 
 Tab.propTypes = {
-  selected: PropTypes.bool,
+  isSelected: PropTypes.bool,
   href: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
 };
 
 Tab.defaultProps = {
-  selected: false,
+  isSelected: false,
 };

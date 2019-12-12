@@ -1,7 +1,7 @@
 {
   "name": "gds-prototyping-kit",
-  "version": "1.0.0",
-  "description": "node express react prototyping kit using GDS components",
+  "version": "0.0.1",
+  "description": "Prototyping kit using React.js, webpack-dev-server and govuk-frontend",
   "main": "index.jsx",
   "nodemonConfig": {
     "watch": [

@@ -6,6 +6,7 @@ const Textarea = (props) => {
     label,
     hint,
     id,
+    name,
     rows,
     inputWidth,
   } = props;
@@ -71,7 +72,7 @@ const Textarea = (props) => {
     <div className="govuk-form-group">
       {isLabel}
       {isHint}
-      <textarea className={textareaInputClassNames} id={id} name={id} rows={rows} aria-describedby={hint ? 'hint' : ''} />
+      <textarea className={textareaInputClassNames} id={id} name={name} rows={rows} aria-describedby={hint ? 'hint' : ''} />
     </div>
   );
 };
@@ -82,8 +83,9 @@ Textarea.propTypes = {
   label: PropTypes.string,
   hint: PropTypes.string,
   rows: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
-  inputWidth: PropTypes.string,
+  inputWidth: PropTypes.oneOf(['2', '3', '4', '5', '10', '20', 'full', 'three-quarters', 'two-thirds', 'one-half', 'one-third', 'one-quarter']),
 };
 
 Textarea.defaultProps = {

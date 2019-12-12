@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const List = (props) => {
-  const { children, ordered } = props;
-  if (ordered) {
+  const { children, isOrdered } = props;
+  if (isOrdered) {
     return (
       <ol className="govuk-list govuk-list--number">
         {children}
@@ -24,9 +24,9 @@ List.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]).isRequired,
-  ordered: PropTypes.bool,
+  isOrdered: PropTypes.bool,
 };
 
 List.defaultProps = {
-  ordered: false,
+  isOrdered: false,
 };
