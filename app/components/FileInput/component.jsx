@@ -19,7 +19,11 @@ export default FileInput;
 
 FileInput.propTypes = {
   id: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
-  // eslint-disable-next-line react/require-default-props
+  label: PropTypes.string,
   onChange: PropTypes.func,
+};
+
+FileInput.defaultProps = {
+  label: 'Upload a file',
+  onChange: () => '',
 };

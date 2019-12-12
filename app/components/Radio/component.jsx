@@ -9,12 +9,12 @@ const Radio = (props) => {
     id,
     name,
     onChange,
-    checked,
+    isChecked,
   } = props;
 
   return (
     <div className="govuk-radios__item">
-      <input className="govuk-radios__input" id={id} name={name} type="radio" value={value} onChange={onChange} checked={checked} />
+      <input className="govuk-radios__input" id={id} name={name} type="radio" value={value} onChange={onChange} checked={isChecked} />
       <label className="govuk-label govuk-radios__label" htmlFor={id}>
         {value}
       </label>
@@ -29,5 +29,5 @@ Radio.propTypes = {
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
-  checked: PropTypes.bool.isRequired,
+  isChecked: PropTypes.bool.isRequired,
 };

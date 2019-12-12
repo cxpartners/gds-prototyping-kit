@@ -11,7 +11,7 @@ import Row from '../components/Row/component';
 import Column from '../components/Column/component';
 import Footer from '../components/Footer/component';
 import Button from '../components/Button/component';
-import FieldSet from '../components/FieldSet/component';
+import Fieldset from '../components/Fieldset/component';
 import FormGroup from '../components/FormGroup/component';
 import TextInput from '../components/TextInput/component';
 import { TOGGLE_YOUR_NAME_ERROR, UPDATE_YOUR_NAME } from '../reducers';
@@ -34,7 +34,7 @@ const TextForm = () => {
           <Row>
             <Column columnWidth="full">
               <FormGroup error={yourNameError || false}>
-                <FieldSet legend="What's your name?" error={yourNameError || false} errorMessage="Enter your name">
+                <Fieldset legend="What's your name?" error={yourNameError || false} errorMessage="Enter your name">
                   <TextInput
                     id="yourName"
                     hint="Enter your full name"
@@ -42,7 +42,7 @@ const TextForm = () => {
                     value={yourNameValue}
                     onChange={(e) => dispatch({ type: UPDATE_YOUR_NAME, payload: e.target.value })}
                   />
-                </FieldSet>
+                </Fieldset>
               </FormGroup>
               {yourNameValue === ''
                 ? (

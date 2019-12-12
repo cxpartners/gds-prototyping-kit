@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-const FieldSet = (props) => {
+const Fieldset = (props) => {
   const {
     children,
     legend,
@@ -12,7 +12,7 @@ const FieldSet = (props) => {
     error,
   } = props;
 
-  const fieldSetErrorClassNames = classNames({
+  const fieldsetErrorClassNames = classNames({
     'govuk-visually-hidden': error,
   });
 
@@ -40,7 +40,7 @@ const FieldSet = (props) => {
 
   const isError = error ? (
     <span className="govuk-error-message">
-      <span className={fieldSetErrorClassNames}>Error:</span>
+      <span className={fieldsetErrorClassNames}>Error:</span>
       &nbsp;
       {errorMessage}
     </span>
@@ -56,9 +56,9 @@ const FieldSet = (props) => {
   );
 };
 
-export default FieldSet;
+export default Fieldset;
 
-FieldSet.propTypes = {
+Fieldset.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
@@ -70,7 +70,7 @@ FieldSet.propTypes = {
   inPage: PropTypes.bool,
 };
 
-FieldSet.defaultProps = {
+Fieldset.defaultProps = {
   legend: null,
   hint: null,
   inPage: false,

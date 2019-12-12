@@ -1,9 +1,9 @@
-Breadcrumb
+Breadcrumbs
 ==========
 
 ### Import
 ```js
-  import Breadcrumb from '../components/Breadcrumbs/component';
+  import Breadcrumbs from '../components/Breadcrumbs/component';
 ```
 <!-- STORY -->
 
@@ -14,6 +14,4 @@ Breadcrumb
 ### Properties
 Prop | Required | Default | Type | Description
 :--- | :------- | :------ | :--- | :----------
- `children` | true | `````` | string | Breadcrumb contents
- `url` | false | `````` | string | href
- `current` | false | false | bool | denotes current page
+ `children` | true | `````` | nodes | Add Breadcrumbs here

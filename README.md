@@ -151,33 +151,38 @@ To find out more, read about [Hooks in the React Redux docs](https://react-redux
 
 ## Component list:
 
-- [x] Accordion - *needs expansion*
+- [x] Accordion - *room for improvement - see issue X*
 - [x] Back link
 - [x] [Breadcrumbs](/app/components/Breadcrumb)
-- [x] Button
-- [ ] Character count - *to do*
+- [x] Button - *needs expansion - see issue X (add Start Button)*
+- [ ] Character count - *to do - see issue X*
 - [x] Checkboxes
-- [x] Date input
+- [x] Date input - *needs expansion - see issue X (add Date Input onChange events)*
 
 - [x] Details
-- [ ] Error message
-- [ ] Error summary
+- [ ] Error message - *to do - see issue X*
+- [ ] Error summary - *to do - see issue X*
 - FakePage
-- [x] Fieldset
+- [x] Fieldset 
 - [x] File upload - *needs expansion*
 - [x] Footer
 
-- [x] Header
+- [x] Header- *needs expansion - see issue X (add Service Name / Navigation)*
+- [x] Heading
 - [x] Inset text
 - [x] Panel
-- [x] Phase banner
-- [x] Radios
+- [x] Phase banner - *needs expansion - see issue X (add Beta / add Feedback link)*
+- [x] Radio - *needs expansion - see issue X (add hints / add Smaller Buttons)*
+- [x] RadioGroup - *needs expansion - see issue X (handle )*
+
+- [x] Row
+- [x] Section break
 - [ ] Select - *to do*
 - [x] Skip link
-
 - [x] Summary list
 - [ ] Table - *to do*
 - [x] Tabs
+
 - [x] Tag
 - [x] Text input
 - [x] Textarea
