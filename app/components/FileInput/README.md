@@ -16,4 +16,4 @@ Prop | Required | Default | Type | Description
 :--- | :------- | :------ | :--- | :----------
 `id` | true | `````` | string | provides name and id
 `label` | false | 'Upload a file' | string | 
-`onChange` | false | () => '' | func | 
+`onChange` | false | `() => ''` | func | 

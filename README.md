@@ -12,6 +12,7 @@ Designed for **Alpha** projects
 * Redux
 * Webpack
 * Babel
+
 * Hot reloading with Webpack Dev Server
 * ESLint
 
@@ -152,34 +153,34 @@ To find out more, read about [Hooks in the React Redux docs](https://react-redux
 ## Component list:
 
 - [x] [Accordion](/app/components/Accordion) - *room for improvement - see issue X
-- [x] [Back link](/app/components/Back)
-- [x] [Breadcrumbs](/app/components/Breadcrumb)
+- [x] [AccordionSection](/app/components/AccordionSection)
+- [x] [Back link](/app/components/BackLink)
+- [x] [Breadcrumbs](/app/components/Breadcrumbs)
 - [x] [Button](/app/components/Button) - *needs expansion - see issue X (add Start Button)*
 - [ ] Character count - *to do - see issue X*
-- [x] [Checkboxes](/app/components/Checkboxes)
-- [x] [Date input](/app/components/Date) - *needs expansion - see issue X (add Date Input onChange events)*
+- [x] [CheckBox](/app/components/CheckBox)
 
+- [x] [Date input](/app/components/DateInput) - *needs expansion - see issue X (add Date Input onChange events)*
 - [x] [Details](/app/components/Details)
 - [ ] Error message - *to do - see issue X*
 - [ ] Error summary - *to do - see issue X*
 - [FakePage](/app/components/FakePage)
 - [x] [Fieldset](/app/components/Fieldset)
 - [x] [File upload](/app/components/FileInput) - *needs expansion*
-- [x] [Footer](/app/components/Footer)
 
+- [x] [Footer](/app/components/Footer)
 - [x] [Header](/app/components/Header) - *needs expansion - see issue X (add Service Name / Navigation)*
 - [x] [Heading](/app/components/Heading)
 - [x] [Inset text](/app/components/InsetText)
 - [x] [Panel](/app/components/Panel)
 - [x] [Phase banner](/app/components/PhaseBanner) - *needs expansion - see issue X (add Beta / add Feedback link)*
-- [x] [Radio](/app/components/Radio) - *needs expansion - see issue X (add hints / add Smaller Buttons)*
-- [x] [RadioGroup](/app/components/RadioGroup) - *needs expansion - see issue X (handle )*
+- [x] [Radio Buttons](/app/components/Radio) - *needs expansion - see issue X (add hints / add Smaller Buttons)*
 
 - [x] [Row](/app/components/Row)
 - [x] [Section break](/app/components/SectionBreak)
-- [ ] [Select](/app/components/Select) - *to do*
-- [x] [Summary:ist](/app/components/Summary)
-- [ ] [Table](/app/components/Table) - *to do*
+- [ ] Select - *to do*
+- [x] [Summary list](/app/components/SummaryList)
+- [ ] Table - *to do*
 - [x] [Tabs](/app/components/Tabs)
 - [x] [Tag](/app/components/Tag)
 

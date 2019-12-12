@@ -1,17 +1,18 @@
-Button
+Panel
 ==========
 
 ### Import
 ```js
-  import Button from '../components/Button/component';
+  import Panel from '../components/Panel/component';
 ```
 <!-- STORY -->
 
 ### Usage
 
-[https://design-system.service.gov.uk/components/button/](https://design-system.service.gov.uk/components/button/)
+[https://design-system.service.gov.uk/components/panel/](https://design-system.service.gov.uk/components/panel/)
 
 ### Properties
 Prop | Required | Default | Type | Description
 :--- | :------- | :------ | :--- | :----------
-`children` | true | `````` | string | 
+`children` | false | ````` | string or node | add panel contents
+`title` | true | ````` | string | panel title

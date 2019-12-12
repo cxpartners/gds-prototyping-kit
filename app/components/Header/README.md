@@ -14,4 +14,4 @@ Header
 ### Properties
 Prop | Required | Default | Type | Description
 :--- | :------- | :------ | :--- | :----------
-`href` | false | '/' | string | homepage link takes hyperlink reference
+`href` | false | '/' | string | homepage link accepts hyperlink reference

@@ -14,4 +14,4 @@ SectionBreak
 ### Properties
 Prop | Required | Default | Type | Description
 :--- | :------- | :------ | :--- | :----------
-`modifier` | true | s | string | takes either s, m, l or xl and applies the appropriate class
+`modifier` | true | s | string | accepts either s, m, l or xl and applies the appropriate class

@@ -14,8 +14,8 @@ Radio
 ### Properties
 Prop | Required | Default | Type | Description
 :--- | :------- | :------ | :--- | :----------
-`value`:  | true | `````` | string | value if true,
-`id`:  | true | `````` | string | id of radio button
-`name`:  | true | `````` | string | name 
-`onChange`:  | true | `````` | func | handle 
-`isChecked`:  | true | `````` | bool | displays checked if true
+`value` | true | `````` | string | value if true,
+`id` | true | `````` | string | id of radio button
+`name` | true | `````` | string | name 
+`onChange` | true | `````` | func | handle 
+`isChecked` | true | `````` | bool | displays checked if true

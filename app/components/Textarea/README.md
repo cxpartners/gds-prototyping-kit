@@ -19,4 +19,4 @@ Prop | Required | Default | Type | Description
 `id` | true | `````` | string | id
 `name` | true | `````` | string | name
 `rows` | true | `````` | string | number of rows - determines height of textarea
-`inputWidth` | false | `````` | string | input width - takes 2, 3, 4, 5, or 10 - width in characters or 'full', 'three-quarters','two-thirds','one-half', 'one-third', or 'one-quarter'
+`inputWidth` | false | `````` | string | input width - accepts 2, 3, 4, 5, or 10 - width in characters or 'full', 'three-quarters','two-thirds','one-half', 'one-third', or 'one-quarter'
