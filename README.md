@@ -152,38 +152,44 @@ To find out more, read about [Hooks in the React Redux docs](https://react-redux
 
 ## Component list:
 
-- [x] [Accordion](/app/components/Accordion) - *room for improvement - see issue X
+- [x] [Accordion](/app/components/Accordion)
 - [x] [AccordionSection](/app/components/AccordionSection)
 - [x] [Back link](/app/components/BackLink)
+- [x] [Breadcrumb](/app/components/Breadcrumb)
 - [x] [Breadcrumbs](/app/components/Breadcrumbs)
-- [x] [Button](/app/components/Button) - *needs expansion - see issue X (add Start Button)*
-- [ ] Character count - *to do - see issue X*
-- [x] [CheckBox](/app/components/CheckBox)
+- [x] [Button](/app/components/Button)
+- [ ] Character count
 
-- [x] [Date input](/app/components/DateInput) - *needs expansion - see issue X (add Date Input onChange events)*
+- [x] [CheckBox](/app/components/CheckBox)
+- [x] [CheckBoxGroup](/app/components/CheckBoxGroup)
+- [x] [DateInput](/app/components/DateInput)
 - [x] [Details](/app/components/Details)
-- [ ] Error message - *to do - see issue X*
-- [ ] Error summary - *to do - see issue X*
+- [ ] Error message
+- [ ] Error summary
 - [FakePage](/app/components/FakePage)
 - [x] [Fieldset](/app/components/Fieldset)
-- [x] [File upload](/app/components/FileInput) - *needs expansion*
 
+- [x] [FileInput](/app/components/FileInput)
 - [x] [Footer](/app/components/Footer)
-- [x] [Header](/app/components/Header) - *needs expansion - see issue X (add Service Name / Navigation)*
+- [x] [Header](/app/components/Header)
 - [x] [Heading](/app/components/Heading)
-- [x] [Inset text](/app/components/InsetText)
+- [x] [InsetText](/app/components/InsetText)
 - [x] [Panel](/app/components/Panel)
-- [x] [Phase banner](/app/components/PhaseBanner) - *needs expansion - see issue X (add Beta / add Feedback link)*
-- [x] [Radio Buttons](/app/components/Radio) - *needs expansion - see issue X (add hints / add Smaller Buttons)*
+- [x] [Phase banner](/app/components/PhaseBanner)
 
+- [x] [Radio](/app/components/Radio)
+- [x] [RadioGroup](/app/components/RadioGroup)
 - [x] [Row](/app/components/Row)
-- [x] [Section break](/app/components/SectionBreak)
-- [ ] Select - *to do*
-- [x] [Summary list](/app/components/SummaryList)
-- [ ] Table - *to do*
-- [x] [Tabs](/app/components/Tabs)
-- [x] [Tag](/app/components/Tag)
+- [x] [SectionBreak](/app/components/SectionBreak)
+- [ ] Select
+- [x] [SummaryList](/app/components/SummaryList)
+- [ ] Table
+- [x] [Tab](/app/components/Tab)
 
+- [x] [TabList](/app/components/TabList)
+- [x] [Tabs](/app/components/Tabs)
+- [x] [TabPanel](/app/components/TabPanel)
+- [x] [Tag](/app/components/Tag)
 - [x] [TextInput](/app/components/Text)
 - [x] [Textarea](/app/components/Textarea)
 - [x] [Warning](/app/components/Warning)
