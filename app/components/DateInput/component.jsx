@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import PropTypes from 'prop-types';
-import FieldSet from '../FieldSet/component';
+import Fieldset from '../Fieldset/component';
 import FormGroup from '../FormGroup/component';
 
 const DateInput = (props) => {
@@ -9,7 +9,7 @@ const DateInput = (props) => {
 
   return (
     <FormGroup error={error}>
-      <FieldSet legend={legend} hint={hint}>
+      <Fieldset legend={legend} hint={hint}>
         <div className="govuk-date-input" id="expiry">
           <div className="govuk-date-input__item">
             <FormGroup error={error}>
@@ -36,7 +36,7 @@ const DateInput = (props) => {
             </FormGroup>
           </div>
         </div>
-      </FieldSet>
+      </Fieldset>
     </FormGroup>
   );
 };
