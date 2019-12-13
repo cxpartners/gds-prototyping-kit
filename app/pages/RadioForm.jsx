@@ -11,7 +11,7 @@ import Row from '../components/Row/component';
 import Column from '../components/Column/component';
 import Footer from '../components/Footer/component';
 import Button from '../components/Button/component';
-import FieldSet from '../components/FieldSet/component';
+import Fieldset from '../components/Fieldset/component';
 import RadioGroup from '../components/RadioGroup/component';
 import Radio from '../components/Radio/component';
 import FormGroup from '../components/FormGroup/component';
@@ -35,13 +35,13 @@ const RadioForm = () => {
           <Row>
             <Column columnWidth="full">
               <FormGroup error={radioError || false}>
-                <FieldSet legend="What can I do?" error={radioError || false} errorMessage="You have to choose an option">
+                <Fieldset legend="What can I do?" error={radioError || false} errorMessage="You have to choose an option">
                   <RadioGroup>
                     <Radio name="radio" id="nothing" value="Nothing" checked={radioValue === 'Nothing'} onChange={(e) => dispatch({ type: UPDATE_RADIO, payload: e.target.value })} />
                     <Radio name="radio" id="something" value="Something" checked={radioValue === 'Something'} onChange={(e) => dispatch({ type: UPDATE_RADIO, payload: e.target.value })} />
                     <Radio name="radio" id="everything" value="Everything" checked={radioValue === 'Everything'} onChange={(e) => dispatch({ type: UPDATE_RADIO, payload: e.target.value })} />
                   </RadioGroup>
-                </FieldSet>
+                </Fieldset>
               </FormGroup>
               {radioValue === ''
                 ? (

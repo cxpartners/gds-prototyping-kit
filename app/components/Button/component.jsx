@@ -26,7 +26,7 @@ const Button = (props) => {
         {children}
       </NavLink>
     ) : (
-      <button className={buttonClassNames} data-module="govuk-button" disabled={isDisabled ? 'disabled' : '' } aria-disabled={isDisabled} type={isSubmit ? 'submit' : 'button'} onClick={onClick}>
+      <button className={buttonClassNames} data-module="govuk-button" disabled={isDisabled ? 'disabled' : ''} aria-disabled={isDisabled} type={isSubmit ? 'submit' : 'button'} onClick={onClick}>
         {children}
       </button>
     )
